@@ -5,4 +5,6 @@
 # pirates_say_arrrrrrrrr("Pirates say arrrrrrrrr")        # => "arrrrrrrr"
 
 def pirates_say_arrrrrrrrr(string)
+  string.gsub(/(?<!r)./i, '')
 end
+
